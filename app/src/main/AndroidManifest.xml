@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.naari">
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/flows"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/flows"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Naari">
+        <activity android:name=".LoginActivity"/>
+        <activity android:name=".activities.HealthActivity"/>
+        <activity android:name=".activities.DetailActivity"/>
+        <activity android:name=".Home"/>
+        <activity android:name=".Settings"/>
+        <activity android:name=".call"/>
+        <activity android:name=".fitness">
+        </activity>
+        <activity android:name=".activity_contact_us"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+    <uses-permission android:name="com.androidtutorialpoint.mymapsappsdirection.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+</manifest>
